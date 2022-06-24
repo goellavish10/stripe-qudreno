@@ -1,0 +1,15 @@
+{
+  "name": "fiverrproject1",
+  "version": "1.0.0",
+  "description": "Stripe and Quaderno Payment Gatewwy",
+  "main": "app.js",
+  "author": "Lavish Goyal",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "morgan": "^1.10.0",
+    "stripe": "^9.10.0"
+  }
+}
