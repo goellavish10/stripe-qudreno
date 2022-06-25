@@ -10,6 +10,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(morgan("tiny"));
 
+app.use('/api/delegation', require('./routes/index'))
+
 const PORT = 3000 || process.env.PORT;
 app.listen(PORT, () => {
   console.log(`Listening on PORT ${PORT}`);
