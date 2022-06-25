@@ -10,6 +10,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(morgan('tiny'));
 
+app.get('/', (req, res) => {
+  res.send('API WORKING');
+});
 app.use('/api/delegation', require('./routes/index'));
 
 const PORT = process.env.PORT || 3000;
